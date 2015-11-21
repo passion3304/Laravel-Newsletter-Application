@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Newsletter\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

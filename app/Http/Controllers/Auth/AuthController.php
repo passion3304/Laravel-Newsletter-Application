@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Newsletter\Http\Controllers\Auth;
 
-use App\User;
+use Newsletter\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Newsletter\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Newsletter
+        psr4_prefix: Newsletter
         src_path: app
