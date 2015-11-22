@@ -1,6 +1,8 @@
-## Laravel PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+## Newsletter Application
+
+<!-- [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+>>>>>>> eb2b53c75dfed044faa1f51553921fc5a5469d4e
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
@@ -24,4 +26,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ### License
 
+<<<<<<< HEAD
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+=======
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) -->
+
