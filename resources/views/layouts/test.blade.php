@@ -15,26 +15,26 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900,400italic' rel='stylesheet'>
 
         <!-- Bootstrap core CSS -->
-        {!! Html::style('css/bootstrap.min.css') !!}
-        {!! Html::style('css/bootstrap-reset.css') !!}
+        {!! Html::style('assets/css/bootstrap.min.css') !!}
+        {!! Html::style('assets/css/bootstrap-reset.css') !!}
 
         <!--Animation css-->
-        {!! Html::style('css/animate.css') !!}
+        {!! Html::style('assets/css/animate.css') !!}
 
         <!--Icon-fonts css-->
-        {!! Html::style('css/font-awesome.css') !!}
-        {!! Html::style('css/ionicons.min.css') !!}
+        {!! Html::style('assets/css/font-awesome.css') !!}
+        {!! Html::style('assets/css/ionicons.min.css') !!}
 
         <!--Morris Chart CSS -->
-        {!! Html::style('css/morris.css') !!}
+        {!! Html::style('assets/css/morris.css') !!}
 
         <!-- sweet alerts -->
-        {!! Html::style('css/sweet-alert.min.css') !!}
+        {!! Html::style('assets/css/sweet-alert.min.css') !!}
 
         <!-- Custom styles for this template -->
-        {!! Html::style('css/style.css') !!}
-        {!! Html::style('css/helper.css') !!}
-        {!! Html::style('css/style-responsive.css') !!}
+        {!! Html::style('assets/css/style.css') !!}
+        {!! Html::style('assets/css/helper.css') !!}
+        {!! Html::style('assets/css/style-responsive.css') !!}
 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -661,49 +661,49 @@
 
 
         <!-- js placed at the end of the document so the pages load faster -->
-        {!! Html::script('js/jquery.js') !!}
-        {!! Html::script('js/bootstrap.min.js') !!}
-        {!! Html::script('js/modernizr.min.js') !!}
-        {!! Html::script('js/pace.min.js') !!}
-        {!! Html::script('js/wow.min.js') !!}
-        {!! Html::script('js/jquery.scrollTo.min.js') !!}
-        {!! Html::script('js/jquery.nicescroll.js') !!}
-        {!! Html::script('js/moment-2.2.1.js') !!}
+        {!! Html::script('assets/js/jquery.js') !!}
+        {!! Html::script('assets/js/bootstrap.min.js') !!}
+        {!! Html::script('assets/js/modernizr.min.js') !!}
+        {!! Html::script('assets/js/pace.min.js') !!}
+        {!! Html::script('assets/js/wow.min.js') !!}
+        {!! Html::script('assets/js/jquery.scrollTo.min.js') !!}
+        {!! Html::script('assets/js/jquery.nicescroll.js') !!}
+        {!! Html::script('assets/js/moment-2.2.1.js') !!}
 
         <!-- Counter-up -->
-        {!! Html::script('js/waypoints.min.js') !!}
-        {!! Html::script('js/jquery.counterup.min.js') !!}
+        {!! Html::script('assets/js/waypoints.min.js') !!}
+        {!! Html::script('assets/js/jquery.counterup.min.js') !!}
 
         <!-- EASY PIE CHART JS -->
-        {!! Html::script('js/easypiechart.min.js') !!}
-        {!! Html::script('js/jquery.easypiechart.min.js') !!}
-        {!! Html::script('js/example.js') !!}
+        {!! Html::script('assets/js/easypiechart.min.js') !!}
+        {!! Html::script('assets/js/jquery.easypiechart.min.js') !!}
+        {!! Html::script('assets/js/example.js') !!}
 
 
         <!--C3 Chart-->
-        {!! Html::script('js/d3.v3.min.js') !!}
-        {!! Html::script('js/c3.js.js') !!}
+        {!! Html::script('assets/js/d3.v3.min.js') !!}
+        {!! Html::script('assets/js/c3.js.js') !!}
 
         <!--Morris Chart-->
-        {!! Html::script('js/morris.min.js') !!}
-        {!! Html::script('js/raphael.min.js') !!}
+        {!! Html::script('assets/js/morris.min.js') !!}
+        {!! Html::script('assets/js/raphael.min.js') !!}
 
         <!-- sparkline -->  
-        {!! Html::script('js/jquery.sparkline.min.js') !!}
-        {!! Html::script('js/chart-sparkline.js') !!}
+        {!! Html::script('assets/js/jquery.sparkline.min.js') !!}
+        {!! Html::script('assets/js/chart-sparkline.js') !!}
 
         <!-- sweet alerts -->
-        {!! Html::script('js/sweet-alert.min.js') !!}
-        {!! Html::script('js/sweet-alert.init.js') !!}
+        {!! Html::script('assets/js/sweet-alert.min.js') !!}
+        {!! Html::script('assets/js/sweet-alert.init.js') !!}
 
-        {!! Html::script('js/jquery.app.js') !!}
+        {!! Html::script('assets/js/jquery.app.js') !!}
         <!-- Chat -->
-        {!! Html::script('js/jquery.chat.js') !!}
+        {!! Html::script('assets/js/jquery.chat.js') !!}
         <!-- Dashboard -->
-        {!! Html::script('js/jquery.dashboard.js') !!}
+        {!! Html::script('assets/js/jquery.dashboard.js') !!}
 
         <!-- Todo -->
-        {!! Html::script('js/jquery.todo.js') !!}
+        {!! Html::script('assets/js/jquery.todo.js') !!}
 
 
         <script type="text/javascript">
