@@ -6,6 +6,7 @@ use Newsletter\Subscribers\Subscriber;
 use Auth;
 use Redirect;
 use Newsletter\Groups\Group;
+use Newsletter\Subscribers\SusbcriberGroup;
 
 
 class SubscribersController extends Controller{
@@ -20,16 +21,37 @@ class SubscribersController extends Controller{
 
 	public function postNew(){
 
-		$data = Input::get();
+		try {
 
-		$subscriber = new Subscriber;
-		$subscriber->name = $data['name'];
-		$subscriber->email = $data['email'];
-		$subscriber->user_id = Auth::user()->id;
+			$data = Input::get();
 
-		if($subscriber->save()){
+			$groups = [];
+
+			if(isset($data['groups'])){
+				$groups = $data['groups'];
+			}
+
+			$subscriber = new Subscriber;
+			$subscriber->name = $data['name'];
+			$subscriber->email = $data['email'];
+			$subscriber->user_id = Auth::user()->id;
+
+			$subscriber->save();
+
+			foreach($groups as $key => $groupId) {
+
+				$susbcriberGroup = new SusbcriberGroup;
+				$susbcriberGroup->group_id = $groupId;
+				$susbcriberGroup->user_id = Auth::user()->id;
+				$susbcriberGroup->subscriber_id = $subscriber->id;
+				$susbcriberGroup->save();
+			}
 
 			return Redirect::to('subscribers');
+			
+		} catch (Exception $e) {
+			
+			return "Error saving subscriber";
 		}
 	}
 
