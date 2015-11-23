@@ -6,6 +6,7 @@ class UsersController extends Controller{
 
 	public function getDashboard(){
 
-		return view("users.dashboard");
+		return view("users.dashboard")
+			->with("page_title", "Dashboard");
 	}
 }
