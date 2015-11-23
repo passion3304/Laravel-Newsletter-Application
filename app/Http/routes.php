@@ -26,9 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
 	    return Redirect::to("dashboard");
 	});
 
-	Route::get('dashboard', function () {
-	    return "dashboard!";
-	});
+	Route::get('dashboard', 'UsersController@getDashboard');
 
 	Route::get("test", 'Tests\TestController@getIndex');
 	Route::get("subscribers", 'SubscribersController@getIndex');
@@ -38,7 +36,7 @@ Route::group(['middleware' => 'auth'], function () {
 // Authentication routes...
 Route::get('login', 'Auth\AuthController@getLogin');
 Route::post('login', 'Auth\AuthController@postLogin');
-	
+
 // Registration routes...
 Route::get('register', 'Auth\AuthController@getRegister');
 Route::post('register', 'Auth\AuthController@postRegister');
