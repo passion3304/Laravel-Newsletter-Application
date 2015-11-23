@@ -22,7 +22,7 @@
                             <li><a href="buttons.html">Upload</a></li>
                         </ul> --}}
                     </li>
-                    <li><a href="#"><i class="ion-settings"></i> <span class="nav-label">Groups</span></a>
+                    <li><a href="/groups"><i class="ion-settings"></i> <span class="nav-label">Groups</span></a>
                         
                     </li>
                     <li><a href="#"><i class="ion-compose"></i> <span class="nav-label">Newsletters</span></a>
