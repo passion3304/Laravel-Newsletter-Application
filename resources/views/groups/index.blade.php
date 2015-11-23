@@ -41,8 +41,7 @@
 					<thead>
 						<th>#</th>
 						<th>Name</th>
-						<th>Email</th>
-						<th>Active</th>
+						<th>Description</th>
 					</thead>
 
 					<tbody>
@@ -52,8 +51,7 @@
 							<tr>
 								<td>{{$key+1}}</td>
 								<td>{{$group->name}}</td>
-								<td>{{$group->email}}</td>
-								<td>{{$group->active}}</td>
+								<td>{{$group->description}}</td>
 							</tr>
 
 						@endforeach

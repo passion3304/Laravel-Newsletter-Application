@@ -17,6 +17,16 @@ class GroupsController extends Controller{
 
 	public function postNew(){
 
-		
+		$data = Input::get();
+
+		$group = new Group;
+		$group->name = $data['name'];
+		$group->description = $data['description'];
+		$group->user_id = Auth::user()->id;
+
+		if($group->save()){
+
+			return Redirect::to('groups');
+		}
 	}
 }
