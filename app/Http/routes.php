@@ -32,6 +32,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get("subscribers", 'SubscribersController@getIndex');
 	Route::post("subscribers", 'SubscribersController@postNew');
 
+	Route::get("groups", 'GroupsController@getIndex');
+	Route::post("groups", 'GroupsController@postNew');
+
 });
 
 // Authentication routes...
