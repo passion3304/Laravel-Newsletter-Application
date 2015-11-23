@@ -30,6 +30,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get("test", 'Tests\TestController@getIndex');
 	Route::get("subscribers", 'SubscribersController@getIndex');
+	Route::post("subscribers", 'SubscribersController@postNew');
 
 });
 
