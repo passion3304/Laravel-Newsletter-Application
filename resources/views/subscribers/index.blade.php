@@ -9,7 +9,7 @@
     <div class="portlet"><!-- /primary heading -->
         <div class="portlet-heading">
             <h3 class="portlet-title text-dark text-uppercase">
-                Susbcribers 
+                Susbcribers <span class="badge badge-info"> {{count($subscribers)}}</span>
             </h3>
 
             <span class="pull-right"> <a href="javascript:;"<button class="md-trigger btn btn-primary" data-toggle="modal" data-target="#panel-modal" data-modal="modal-10"><i class="ion-plus"></i> New Subscriber</button></a></span>
@@ -26,6 +26,15 @@
 
 
             <div>
+
+            @if(count($subscribers) < 1)
+				
+				<div class="alert alert-info">
+					<i>You have not created any subscribers yet! Click the button above to manually add subscribers or upload susbcribers from an excel file</i>
+				</div>
+				
+
+				@else
             	
             	<table class="table">
 
@@ -33,9 +42,27 @@
 						<th>#</th>
 						<th>Name</th>
 						<th>Email</th>
+						<th>Active</th>
 					</thead>
+
+					<tbody>
+
+						@foreach($subscribers as $key => $subscriber)
+
+							<tr>
+								<td>{{$key+1}}</td>
+								<td>{{$subscriber->name}}</td>
+								<td>{{$subscriber->email}}</td>
+								<td>{{$subscriber->active}}</td>
+							</tr>
+
+						@endforeach
+
+					</tbody>
 					
 				</table>
+
+			@endif
 
             </div>
 

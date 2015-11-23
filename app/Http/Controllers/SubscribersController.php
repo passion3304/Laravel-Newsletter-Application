@@ -10,7 +10,10 @@ use Redirect;
 class SubscribersController extends Controller{
 
 	public function getIndex(){
-		return view("subscribers.index");
+
+		return view("subscribers.index")
+			->with("subscribers", Subscriber::where("user_id", "=", Auth::user()->id)->get())
+			->with("page_title", "Susbcribers");
 	}
 
 	public function postNew(){

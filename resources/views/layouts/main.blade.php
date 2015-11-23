@@ -9,7 +9,7 @@
 
         <link rel="shortcut icon" href="img/favicon_1.ico">
 
-        <title>Admin Dashboard</title>
+        <title>Newsleeter Messaging System</title>
 
         <!-- Google-Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900,400italic' rel='stylesheet'>
@@ -62,7 +62,7 @@
 
             <div class="wraper container-fluid">
                 <div class="page-title"> 
-                    <h3 class="title">Welcome !</h3> 
+                    <h3 class="title">{{$page_title}}</h3> 
                 </div>
 
                 <div class="row">
