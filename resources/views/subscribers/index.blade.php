@@ -93,6 +93,15 @@
 
                 		<input type="text" name="email" class="form-control" placeholder="Email" required><br><br>
 
+                        <b>Add Susbcriber to Group(s)</b><br>
+                        <ul>
+                            @foreach($groups as $i => $group)
+                                
+                               <label> <li><input id="{{$i}}" name="groups[]" value="{{$group->id}}" type="checkbox" /> {{$group->name}}</li> </label><br>
+                            @endforeach
+                        </ul>
+                        <hr>
+
                 		<input type="submit" class="btn btn-primary" value="Save">
                 		
                 	</form>

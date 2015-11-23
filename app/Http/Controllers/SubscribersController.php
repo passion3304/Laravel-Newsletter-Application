@@ -5,6 +5,7 @@ use Input;
 use Newsletter\Subscribers\Subscriber;
 use Auth;
 use Redirect;
+use Newsletter\Groups\Group;
 
 
 class SubscribersController extends Controller{
@@ -13,7 +14,8 @@ class SubscribersController extends Controller{
 
 		return view("subscribers.index")
 			->with("subscribers", Subscriber::where("user_id", "=", Auth::user()->id)->get())
-			->with("page_title", "Susbcribers");
+			->with("page_title", "Susbcribers")
+			->with("groups", Group::where("user_id", "=", Auth::user()->id)->get());
 	}
 
 	public function postNew(){
