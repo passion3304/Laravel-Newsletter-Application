@@ -12,7 +12,7 @@
                 Susbcribers <span class="badge badge-info"> {{count($subscribers)}}</span>
             </h3>
 
-            <span class="pull-right"> <a href="javascript:;"<button class="md-trigger btn btn-primary" data-toggle="modal" data-target="#panel-modal" data-modal="modal-10"><i class="ion-plus"></i> New Subscriber</button></a></span>
+            <span class="pull-right"> <a href="javascript:;"<button class="md-trigger btn btn-primary" data-toggle="modal" data-target="#panel-modal" data-modal="modal-10"><i class="ion-plus-circled"></i> New Subscriber</button></a></span>
 
             <div class="portlet-widgets">
                 <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
