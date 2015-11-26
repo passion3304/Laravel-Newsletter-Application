@@ -41,12 +41,12 @@
 
             <div class="alert">
                 
-                <form action="{{URL::to('subscribers/upload')}}" method="POST">
+                <form action="{{URL::to('subscribers/upload')}}" method="POST" enctype="multipart/form-data">
                         
                      {!! csrf_field() !!}
 
                     <label>Select Excel File</label><br>
-                    <input type="file" name="excel_file"><br>
+                    <input type="file" name="excel_file" required><br>
 
                     <b>Add Susbcriber to Group(s)</b><br>
                     <ul>
