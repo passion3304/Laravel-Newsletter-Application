@@ -2,6 +2,8 @@
 
 @section("content")
 
+<script src="//tinymce.cachefly.net/4.3/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea' });</script>
 
 <div class="row">
 
@@ -24,12 +26,20 @@
 		
 			<div>
 
-			<form action="/templates" method="POST">
+			{{-- <form action="/templates" method="POST">
+
+                {!! csrf_field() !!}
+
 				<img src="http://placehold.it/450x350" alt="" class="img-rounded img-responsive" /><br>
 				<input type="radio" value="1" name="template" checked="checked"> Select<br><br>
 				<input type="submit" value="Save" class="btn btn-primary"> <br><br>
 
-			</form>
+			</form> --}}
+
+    
+            <textarea>{{$template->html_content}}</textarea>
+
+
 			</div>
 
         </div>
