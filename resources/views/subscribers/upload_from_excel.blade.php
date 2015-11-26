@@ -22,13 +22,31 @@
             </div>
 		
 			<div>
+
+            <div class="alert alert-info list">
+
+                <h4>Please read the instructions carefully</h4>
+
+                <ul>
+                    <li>Create a new excel file</li>
+                    <li>Enter name in the first column and email in the second column.</li>
+                    <li>Save file and check to be sure it is in the microsoft excel format.</li>
+                    <li>Upload the file by clicking the browse button below.</li>
+                    <li>Select the group(s) you want to add the subscriber(s) to. If you haven't created a group yet, go to the groups menu and create one and come back to the upload page and proceed.</li>
+                    <li>Select you group(s) and make sure your excel file is uploaded before continuing.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="alert">
                 
                 <form action="{{URL::to('subscribers/upload')}}" method="POST">
                         
                      {!! csrf_field() !!}
 
                     <label>Select Excel File</label><br>
-                    <input type="file" name="excel_file"><br><br>
+                    <input type="file" name="excel_file"><br>
 
                     <b>Add Susbcriber to Group(s)</b><br>
                     <ul>
@@ -39,9 +57,13 @@
                     </ul>
                     <hr>
 
-                    <input type="submit" class="btn btn-primary" value="Save">
+                    <input type="submit" class="btn btn-primary" value="Save"><br><br>
                     
                 </form>
+
+            </div>
+                
+                
 
 			</div>
 
