@@ -145,6 +145,7 @@ return [
         Newsletter\Providers\AuthServiceProvider::class,
         Newsletter\Providers\EventServiceProvider::class,
         Newsletter\Providers\RouteServiceProvider::class,
+        'Maatwebsite\Excel\ExcelServiceProvider',
 
     ],
 
@@ -196,6 +197,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Html'      => Illuminate\Html\HtmlFacade::class,
         'Form'      => Illuminate\Html\FormFacade::class,
+        'Excel'     => 'Maatwebsite\Excel\Facades\Excel',
 
     ],
 
