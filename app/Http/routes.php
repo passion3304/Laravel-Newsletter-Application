@@ -35,6 +35,18 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get("groups", 'GroupsController@getIndex');
 	Route::post("groups", 'GroupsController@postNew');
 
+	Route::get("tests/email", 'Tests\TestController@getSendEmail');
+	//Route::post("groups", 'GroupsController@postNew');
+
+	Route::get("templates", 'TemplatesController@getIndex');
+	Route::post("templates", 'TemplatesController@postSaveUserTemplate');
+
+	Route::get('templates/epi', 'TemplatesController@getEPITemplate');
+	Route::post('templates/epi', 'TemplatesController@postSaveEPITemplate');
+
+	Route::get("subscribers/upload", 'SubscribersController@getUploadFromExcel');
+	Route::post("subscribers/upload", 'SubscribersController@postUploadFromExcel');
+
 });
 
 // Authentication routes...
