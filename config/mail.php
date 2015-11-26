@@ -15,7 +15,8 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    //'driver' => env('MAIL_DRIVER', 'mailgun'),
+    'driver' => 'mailgun',
 
     /*
     |--------------------------------------------------------------------------
@@ -118,7 +119,7 @@ return [
     | you may inspect the message. This is great for local development.
     |
     */
-
+    
     'pretend' => false,
-
+    
 ];
