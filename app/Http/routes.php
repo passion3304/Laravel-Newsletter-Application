@@ -47,6 +47,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get("subscribers/upload", 'SubscribersController@getUploadFromExcel');
 	Route::post("subscribers/upload", 'SubscribersController@postUploadFromExcel');
 
+	Route::get("newsletters", 'NewslettersController@getIndex');
+	Route::post("newsletters", 'NewslettersController@postCreate');
+
 });
 
 // Authentication routes...
