@@ -134,6 +134,22 @@
         <!-- Todo -->
         {!! Html::script('assets/js/jquery.todo.js') !!}
 
+         <!-- js placed at the end of the document so the pages load faster -->
+        {!! Html::script('assets/js/wow.min.js') !!}
+        {!! Html::script('assets/js/jquery.nicescroll.js') !!}
+
+        <!--Form Validation-->
+        {!! Html::script('assets/js/bootstrap-validator.min.js') !!}
+
+        <!--Form Wizard-->
+        {!! Html::script('assets/js/jquery.steps.min.js') !!}
+        {!! Html::script('assets/js/jquery.validate.min.js') !!}
+
+        <!--wizard initialization-->
+        {!! Html::script('assets/js/wizard-init.js') !!}
+
+        {!! Html::script('assets/js/jquery.app.js') !!}
+
 
         <script type="text/javascript">
         /* ==============================================
