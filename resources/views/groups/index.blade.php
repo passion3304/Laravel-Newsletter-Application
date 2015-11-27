@@ -5,6 +5,8 @@
 
 <div class="row">
 
+     @include('general.notification')
+
 	<div class="col-lg-8">
     <div class="portlet"><!-- /primary heading -->
         <div class="portlet-heading">

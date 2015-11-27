@@ -4,12 +4,15 @@
 
 
 <div class="row">
-
+    
+       @include('general.notification')
+       
 	<div class="col-lg-8">
     <div class="portlet"><!-- /primary heading -->
         <div class="portlet-heading">
             <h3 class="portlet-title text-dark text-uppercase">
                 Susbcribers <span class="badge badge-info"> {{count($subscribers)}}</span>
+
             </h3>
 
             <span class="pull-right"> <a href="javascript:;"<button class="md-trigger btn btn-primary" data-toggle="modal" data-target="#panel-modal" data-modal="modal-10"><i class="ion-plus-circled"></i> New Subscriber</button></a></span>
