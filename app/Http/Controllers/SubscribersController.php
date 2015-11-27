@@ -49,7 +49,10 @@ class SubscribersController extends Controller{
 				$susbcriberGroup->save();
 			}
 
-			return Redirect::to('subscribers');
+			return Redirect::to('subscribers')
+				->with('notification_heading','Success!')
+				->with('notification_type', 'alert-success')
+				->with('success', 'Subscribers Created Successfully');
 			
 		} catch (Exception $e) {
 			
@@ -110,7 +113,10 @@ class SubscribersController extends Controller{
 			}
 		}
 
-		return "Subscribers uploaded successfully";
+		return Redirect::to('subscribers')
+			->with('notification_heading','Success!')
+			->with('notification_type', 'alert-success')
+			->with('success', 'Subscribers Created Successfully');
 	}
 
 
