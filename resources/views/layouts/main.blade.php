@@ -35,7 +35,8 @@
         {!! Html::style('assets/css/style.css') !!}
         {!! Html::style('assets/css/helper.css') !!}
         {!! Html::style('assets/css/style-responsive.css') !!}
-
+    
+        {!! Html::style('assets/css/notification.css') !!}
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
         <!--[if lt IE 9]>
@@ -149,6 +150,10 @@
         {!! Html::script('assets/js/wizard-init.js') !!}
 
         {!! Html::script('assets/js/jquery.app.js') !!}
+
+        {!! Html::script('assets/js/notify.min.js') !!}
+        {!! Html::script('assets/js/notify-metro.js') !!}
+        {!! Html::script('assets/js/notifications.js') !!}
 
 
         <script type="text/javascript">
