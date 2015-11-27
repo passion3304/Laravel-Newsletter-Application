@@ -25,7 +25,7 @@
                     <li><a href="/groups"><i class="ion-settings"></i> <span class="nav-label">Groups</span></a>
                         
                     </li>
-                    <li><a href="#"><i class="ion-compose"></i> <span class="nav-label">Newsletters</span></a>
+                    <li><a href="/newsletters"><i class="ion-compose"></i> <span class="nav-label">Newsletters</span></a>
                     </li>
                     <li><a href="#"><i class="ion-grid"></i> <span class="nav-label">Templates</span></a>
                     </li>
