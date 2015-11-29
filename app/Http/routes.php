@@ -48,7 +48,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post("subscribers/upload", 'SubscribersController@postUploadFromExcel');
 
 	Route::get("newsletters", 'NewslettersController@getIndex');
-	Route::post("newsletters", 'NewslettersController@postCreate');
+	Route::post("newsletters", 'NewslettersController@postSend');
+
 
 });
 
@@ -63,5 +64,7 @@ Route::post('register', 'Auth\AuthController@postRegister');
 Route::get('auth/login', function () {
 	 return Redirect::to("login");
 });
+
+Route::get("newsletters/process", "NewslettersController@getProcess");
 
 
