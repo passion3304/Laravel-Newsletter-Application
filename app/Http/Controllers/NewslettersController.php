@@ -9,6 +9,7 @@ use Newsletter\Groups\Group;
 use Newsletter\Subscribers\SusbcriberGroup;
 use DB;
 use Newsletter\QueuedMessage;
+use Mail;
 
 class NewslettersController extends Controller{
 
@@ -70,6 +71,29 @@ class NewslettersController extends Controller{
 	}
 
 
+	public function getProcess(){
+
+		$queuedMessages = QueuedMessage::where('sent', '=', 0)->get();
+
+		foreach ($queuedMessages as $key => $queuedMessage) {
+			
+			$name = $queuedMessage->name;
+			$email = $queuedMessage->email;
+
+			 $sendEmail = Mail::send($queuedMessage->template, ['name' => $name, 'email' => $email], function ($m) use ($name, $email) {
+	            
+	            $m->from('rashkeed@gmail.com', 'Education Pathways International');
+
+	            $m->to($email, $name)->subject('EPI Newsletter!');
+
+	        });
+
+			 if($sendEmail){
+			 	$queuedMessage->sent = 1;
+			 	$queuedMessage->save();
+			 }
+		}
+	}
 
 
 
