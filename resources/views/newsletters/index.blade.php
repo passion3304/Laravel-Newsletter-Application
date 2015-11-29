@@ -4,6 +4,7 @@
 
 {!! Html::style('assets/css/jquery.steps.css') !!}
 
+@include('general.notification')
 
 <form action="/newsletters" method="POST">
 
