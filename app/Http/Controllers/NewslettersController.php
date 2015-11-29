@@ -8,6 +8,7 @@ use Redirect;
 use Newsletter\Groups\Group;
 use Newsletter\Subscribers\SusbcriberGroup;
 use DB;
+use Newsletter\QueuedMessage;
 
 class NewslettersController extends Controller{
 
@@ -40,7 +41,7 @@ class NewslettersController extends Controller{
 
 				$subscribers = DB::table('subscriber_groups')
 		            ->join('subscribers', 'subscribers.id', '=', 'subscriber_groups.subscriber_id')
-		            ->select('subscribers.email')
+		            ->select('subscribers.email', 'subscribers.name')
 		            ->get(); 
 
 		        foreach ($subscribers as $key => $email) {
@@ -61,7 +62,14 @@ class NewslettersController extends Controller{
 			$queueMessage->save();
 		}
 
+		return Redirect::to('newsletters')
+			->with('notification_heading','Success!')
+			->with('notification_type', 'alert-success')
+			->with('success', 'Newsletters Processed Successfully');
+
 	}
+
+
 
 
 
