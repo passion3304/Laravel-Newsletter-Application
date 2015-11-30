@@ -4,6 +4,7 @@ use Newsletter\Http\Controllers\Controller;
 use Auth;
 use Newsletter\Templates\UserTemplate;
 use Input;
+use Redirect;
 
 class TemplatesController extends Controller{
 
@@ -20,14 +21,19 @@ class TemplatesController extends Controller{
 
 		$data = Input::get();
 
-		$userTemplate = new UserTemplate;
+		$userTemplate = UserTemplate::find(1);
 		$userTemplate->title = "Default Template";
 		$userTemplate->description = "";
 		$userTemplate->user_id = Auth::user()->id;
 		$userTemplate->template_id = 1;
 		$userTemplate->header_content = UserTemplate::headerDefault();
-		$userTemplate->html_content = UserTemplate::htmlDefault();
+		$userTemplate->html_content = $data['html_content'];
 		$userTemplate->save();
+
+		return Redirect::to('templates')
+				->with('notification_heading','Success!')
+				->with('notification_type', 'alert-success')
+				->with('success', 'Saved Successfully');
 	}
 
 	public function getEPITemplate(){
